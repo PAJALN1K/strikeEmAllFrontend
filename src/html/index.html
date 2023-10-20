@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Strike 'Em All</title>
+        <meta charset="utf-8">
+        <meta name="language" content="RU">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="stike-em-all-page">
+            <div class="header">
+                <div class="header__column--first">
+                    <div class="header-logo">
+                        <a class="header-logo__link" href="#">
+                            <div class="header-logo__container">
+                                <img width="120" src="../img/strike-em-all-logo.svg" alt="three targets">
+                                <p>Strike 'Em All</p>
+                            </div>
+                            <div class="header-logo__placeholder"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__column--second">
+                    <ul class="menu-header">
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="header__column--third">
+                    <ul class="btns-links">
+                        <li><a href="#"><img alt="search"></a></li>
+                        <li><a href="#"><img alt="account"></a></li>
+                        <li><a href="#"><img alt="shopping basket"></a></li>
+                    </ul>
+                </div>
+                <div class="header-search" style="display: none;">
+                    <form action="/search" method="get" autocomplete="off" >
+                        <input 
+                            type="text" 
+                            name="text"
+                            placeholder="Поиск по каталогу" 
+                            class="catalog-search">
+                    </form>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-container">
+                    <nav>
+                        <ul>
+                            <li>Главная</li>
+                            <li>Каталог</li>
+                            <li>Страйкбольные автоматы</li>
+                        </ul>
+                    </nav>
+                    <div class="item-filter-section">
+                        <p>Страйкбольные автоматы</p>
+                        <div class="item-filter">
+                            <p>Бренд:</p>
+                            <ul>
+                                <li><input type="button">AGM</li>
+                                <li><input type="button">Colt</li>
+                                <li><input type="button">Cyma</li>
+                            </ul>
+                        </div>
+                        <div class="item-filter">
+                            <p>Калибр:</p>
+                            <ul>
+                                <li><input type="button">6ММ</li>
+                                <li><input type="button">9ММ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-flow">
+                        <div class="sort-button">
+                            <input type="button" value="По цене (убывание)">
+                        </div>
+                        <div class="item-container">
+                            <div class="item">
+                                <img>
+                                <a href="#" class="item-desc">COLT M4A1 Full Metal 13" Keymod Airsoft AEG, Black</a>
+                                <p class="item-price">22.500₽</p>
+                                <input type="button" value="В корзину">
+                            </div>
+                            <div class="item">
+                                <img>
+                                <a href="#" class="item-desc">CYMA Standard AK47 Full Metal Real Wood Blowback Airsoft AEG Rifle, Wood/Black</a>
+                                <p class="item-price">20.000₽</p>
+                                <input type="button" value="В корзину">
+                            </div>
+                            <div class="item">
+                                <img>
+                                <a href="#" class="item-desc">AGM WWII British Sten MKII AEG Airsoft Rifle, Black</a>
+                                <p class="item-price">20.000₽</p>
+                                <input type="button" value="В корзину">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-logo">
+                    <img alt="three targets">
+                    <p class="logo-text">Strike 'Em All</p>
+                    <p class="logo-copyright">© Магазин страйкбольного снаряжения, 2023</p>
+                </div>
+                <div class="footer-flow">
+                    <div class="footer-info">
+                        <p>Информация</p>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Политика безопасности</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-media">
+                        <p>Информация</p>
+                        <ul>
+                            <li><a href="#"><img alt="vk">ВКонтакте</a></li>
+                            <li><a href="#"><img alt="telegram">Telegram</a></li>
+                            <li><a href="#"><img alt="youtube">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
