@@ -10,96 +10,119 @@
     <body>
         <div class="stike-em-all-page">
             <div class="header">
-                <div class="header__column--first">
-                    <div class="header-logo">
+                <div class="header-container">
+                    <div class="header-container__column header-logo">
                         <a class="header-logo__link" href="#">
                             <div class="header-logo__container">
-                                <img width="120" src="../img/strike-em-all-logo.svg" alt="three targets">
-                                <p>Strike 'Em All</p>
+                                <img class="header-logo__container--img noselect" src="../img/icons/strike-em-all-logo.svg" alt="three_targets">
+                                <p class="header-logo__container--p">Strike 'Em All</p>
                             </div>
                             <div class="header-logo__placeholder"></div>
                         </a>
                     </div>
-                </div>
-                <div class="header__column--second">
-                    <ul class="menu-header">
-                        <li><a href="#">Каталог</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">О нас</a></li>
-                    </ul>
-                </div>
-                <div class="header__column--third">
-                    <ul class="btns-links">
-                        <li><a href="#"><img alt="search"></a></li>
-                        <li><a href="#"><img alt="account"></a></li>
-                        <li><a href="#"><img alt="shopping basket"></a></li>
-                    </ul>
-                </div>
-                <div class="header-search" style="display: none;">
-                    <form action="/search" method="get" autocomplete="off" >
-                        <input 
-                            type="text" 
-                            name="text"
-                            placeholder="Поиск по каталогу" 
-                            class="catalog-search">
-                    </form>
+                    <nav class="header-container__column website-menu">
+                        <ul class="pieces">
+                            <li class="pieces__item"><a class="pieces__link" href="#">Каталог</a></li>
+                            <li class="pieces__item"><a class="pieces__link" href="#">Отзывы</a></li>
+                            <li class="pieces__item"><a class="pieces__link" href="#">О нас</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-container__column catalog-search">
+                        <form class="catalog-search__form" action="/search/" method="get" autocomplete="off" >
+                            <input 
+                                type="text" 
+                                name="text"
+                                placeholder="Поиск по каталогу" 
+                                class="catalog-search__field">
+                        </form>
+                    </div>
+                    <nav class="header-container__column user-navigation">
+                        <ul class="pieces">
+                            <li class="pieces__item"><a class="pieces__link" href="#"><img class="noselect" src="../img/icons/person_icon_fff.svg" alt="account"></a></li>
+                            <li class="pieces__item"><a class="pieces__link" href="#"><img class="noselect" src="../img/icons/favourites_icon_fff.svg" alt="favourites"></a></li>
+                            <li class="pieces__item"><a class="pieces__link" href="#"><img class="noselect" src="../img/icons/shopping_cart_icon_fff.svg" alt="shopping_basket"></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <div class="main">
                 <div class="main-container">
-                    <nav>
-                        <ul>
-                            <li>Главная</li>
-                            <li>Каталог</li>
-                            <li>Страйкбольные автоматы</li>
-                        </ul>
-                    </nav>
-                    <div class="item-filter-section">
-                        <p>Страйкбольные автоматы</p>
-                        <div class="item-filter">
-                            <p>Бренд:</p>
-                            <ul>
-                                <li><input type="button">AGM</li>
-                                <li><input type="button">Colt</li>
-                                <li><input type="button">Cyma</li>
-                            </ul>
+                    <div class="main-container__row category-header">
+                        <nav class="catalog-breadcrumbs">
+                            <ol class="stages">
+                                <li class="stages__item"><a class="stages__link" href="#">Главная</a></li>
+                                <li class="stages__item"><a class="stages__link" href="#">Каталог</a></li>
+                                <li class="stages__item stages__item--last"><span class="stages__link" href="#">Страйкбольные автоматы</span></li>
+                            </ol>
+                        </nav>
+                        <div class="header-headline">
+                            <h1 class="headline__item header-headline__label">Страйкбольные автоматы</h1>
+                            <span class="headline__item header-headline__count">3</span>
                         </div>
-                        <div class="item-filter">
-                            <p>Калибр:</p>
-                            <ul>
-                                <li><input type="button">6ММ</li>
-                                <li><input type="button">9ММ</li>
-                            </ul>
+                        <div class="post-headline-space">
+                            <div class="post-headline__column filter-text">
+                                <img class="filter-text__column filter-text__img noselect" src="../img/icons/filter_icon_111.svg" alt="filters">
+                                <span class="filter-text__column filter-text__label">Фильтры</span>
+                            </div>
+                            <div class="post-headline__column filters-flow">
+                            </div>
+                            <div class="post-headline__column catalog-items-select">
+                                <form class="catalog-items-select__form" action="/select/" method="get">
+                                    <select class="catalog-items-select__button" name="catalog-items">
+                                        <option value="">По цене (возрастание)</option>
+                                        <option value="price_desc">По цене (убывание)</option>
+                                        <option value="name_asc">По названию (возрастание)</option>
+                                        <option value="name_desc">По названию (убывание)</option>
+                                        <option value="pop_desc">Популярные</option>
+                                        <option value="rate_desc">Высокий рейтинг</option>
+                                    </select>
+                                </form>
+                            </div>
                         </div>
+                        <hr class="catalog-divide-line">
                     </div>
-                    <div class="item-flow">
-                        <div class="sort-button">
-                            <input type="button" value="По цене (убывание)">
+                    <div class="main-container__row category">
+                        <div class="category__column catalog-filter-column">
+                            <div class="catitem-filter" id="catitem-brand">
+                                <span class="catitem-filter__name">Бренд:</span>
+                                <ul class="pieces">
+                                    <li class="pieces__item"><input type="checkbox">AGM</li>
+                                    <li class="pieces__item"><input type="checkbox">Colt</li>
+                                    <li class="pieces__item"><input type="checkbox">Cyma</li>
+                                </ul>
+                            </div>
+                            <div class="catitem-filter" id="catitem-caliber">
+                                <span class="catitem-filter__name">Калибр:</span>
+                                <ul class="pieces">
+                                    <li class="pieces__item"><input type="checkbox">6ММ</li>
+                                    <li class="pieces__item"><input type="checkbox">9ММ</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="item-container">
-                            <div class="item">
-                                <img>
-                                <a href="#" class="item-desc">COLT M4A1 Full Metal 13" Keymod Airsoft AEG, Black</a>
-                                <p class="item-price">22.500₽</p>
+                        <div class="category__column catitem-column">
+                            <div class="catitem">
+                                <img src="../img/items-previews/AGM_WWII_British_Sten_MKII.png">
+                                <a class="item-label" href="#">AGM WWII British Sten MKII AEG Airsoft Rifle, Black</a>
+                                <p class="item-price">19.990₽</p>
                                 <input type="button" value="В корзину">
                             </div>
-                            <div class="item">
-                                <img>
-                                <a href="#" class="item-desc">CYMA Standard AK47 Full Metal Real Wood Blowback Airsoft AEG Rifle, Wood/Black</a>
-                                <p class="item-price">20.000₽</p>
+                            <div class="catitem">
+                                <img src="../img/items-previews/CYMA_Standard_AK47_FullMetal.png">
+                                <a class="item-label" href="#">CYMA Standard AK47 Full Metal Real Wood Blowback Airsoft AEG Rifle, Wood/Black</a>
+                                <p class="item-price">19.990₽</p>
                                 <input type="button" value="В корзину">
                             </div>
-                            <div class="item">
-                                <img>
-                                <a href="#" class="item-desc">AGM WWII British Sten MKII AEG Airsoft Rifle, Black</a>
-                                <p class="item-price">20.000₽</p>
+                            <div class="catitem">
+                                <img src="../img/items-previews/COLT_M4A1_FullMetal_13_Keymod_Airsoft_AEG_Black.png">
+                                <a class="item-label" href="#">COLT M4A1 Full Metal 13" Keymod Airsoft AEG, Black</a>
+                                <p class="item-price">22.490₽</p>
                                 <input type="button" value="В корзину">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer">
+            <!-- <div class="footer">
                 <div class="footer-logo">
                     <img alt="three targets">
                     <p class="logo-text">Strike 'Em All</p>
@@ -107,7 +130,7 @@
                 </div>
                 <div class="footer-flow">
                     <div class="footer-info">
-                        <p>Информация</p>
+                        <span>Информация</span>
                         <ul>
                             <li><a href="#">О нас</a></li>
                             <li><a href="#">Отзывы</a></li>
@@ -115,7 +138,7 @@
                         </ul>
                     </div>
                     <div class="footer-media">
-                        <p>Информация</p>
+                        <span>Социальные сети</span>
                         <ul>
                             <li><a href="#"><img alt="vk">ВКонтакте</a></li>
                             <li><a href="#"><img alt="telegram">Telegram</a></li>
@@ -123,7 +146,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </body>
 </html>
