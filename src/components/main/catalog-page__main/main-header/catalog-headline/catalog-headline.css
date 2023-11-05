@@ -1,0 +1,10 @@
+@import url(catalog-headline__name-label.css);
+@import url(catalog-headline__count.css);
+
+.catalog-headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 15px;
+}

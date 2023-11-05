@@ -1,0 +1,21 @@
+.catalog-item__purchase-button {
+    height: 40px;
+    width: 100%;
+
+    background-color: #B41818;
+    border: none;
+    border-radius: 7px;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+
+    transition: background-color 0.3s;
+}
+
+.catalog-item__purchase-button:hover {
+    background-color: #111;
+}
