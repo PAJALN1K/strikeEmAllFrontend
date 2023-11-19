@@ -1,0 +1,9 @@
+@import url(explanation__header/explanation__header.css);
+@import url(explanation__paragraph/explanation__paragraph.css);
+
+.explanation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,9 @@
+@import url(filter-panel/filter-panel.css);
+@import url(item-catalog/item-catalog.css);
+
+.category {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 20px;
+}
