@@ -1,0 +1,11 @@
+@import url(auth-page__field/auth-page__field.css);
+@import url(auth-page__name-label/auth-page__name-label.css);
+@import url(auth-page__submit/auth-page__submit.css);
+
+
+
+.auth-page__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
