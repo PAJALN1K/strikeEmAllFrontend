@@ -1,7 +1,7 @@
-@import url(catalog-headline__name-label.css);
-@import url(catalog-headline__count.css);
+@import url(page-headline__name-label.css);
+@import url(page-headline__count.css);
 
-.catalog-headline {
+.page-headline {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

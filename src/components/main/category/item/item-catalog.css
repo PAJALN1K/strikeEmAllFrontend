@@ -1,4 +1,4 @@
-@import url(catalog-item/catalog-item.css);
+@import url(item_catalog.css);
 
 .item-catalog {
     flex-basis: 80%;
