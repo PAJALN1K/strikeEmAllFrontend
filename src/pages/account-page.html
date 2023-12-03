@@ -68,7 +68,7 @@
                         <div class="main-header">
                             <nav class="website-breadcrumbs">
                                 <ol class="website-breadcrumbs__list">
-                                    <li class="website-breadcrumbs__item website-breadcrumbs__item_previous"><a class="website-breadcrumbs__previous-dir" href="#">Главная</a></li>
+                                    <li class="website-breadcrumbs__item website-breadcrumbs__item_previous"><a class="website-breadcrumbs__previous-dir" href="../../public/index.html">Главная</a></li>
                                     <li class="website-breadcrumbs__item website-breadcrumbs__item_current"><span class="website-breadcrumbs__current-dir" href="#">Личный кабинет</span></li>
                                 </ol>
                             </nav>
@@ -80,32 +80,28 @@
                                 <div class="auth-page__column">
                                     <div class="auth-page__login">
                                         <form class="auth-page__form auth-page__form-users validate" action="/users/" method="post"> 
-                                            <h3 class="auth-page__name-label">Вход в личный кабинет</h3>
+                                            <h3 class="auth-page__name-label">Авторизация</h3>
                                             <div class="auth-page__field">
-                                            <input class="auth-page__input required" type="text" name="email" placeholder="E-mail" value=""/>
+                                                <input class="auth-page__input required" type="text" name="email" placeholder="E-mail" value=""/>
                                             </div>
                                             <div class="auth-page__field">
-                                            <input class="auth-page__input required" type="password" name="password" placeholder="Пароль" value=""/>
+                                                <input class="auth-page__input required" type="password" name="password" placeholder="Пароль" value=""/>
                                             </div>
                                             <div class="auth-page__field">
-                                            <input type="checkbox" name="remember" value="1" id="remember" checked="checked"/>
-                                            <label for="remember">Запомнить меня на сайте</label>
+                                                <input type="checkbox" name="remember" value="1" id="remember"/>
+                                                <label class="auth-page__checkbox-text" for="remember">Запомнить меня на сайте</label>
                                             </div>
                                             <div class="auth-page__submit">
-                                            <button class="submit-button auth-page__auth-button" type="submit" name="apply" value="1">
-                                                <span>Войти</span>
-                                            </button>
+                                                <button class="submit-button auth-page__auth-button" type="submit" name="apply" value="1">Войти</button>
                                             </div>
-                                            <span class="auth-page__restore-password">
-                                            <a href="/users/restore-password/">Восстановить пароль</a>
-                                            </span>
+                                            <a class="auth-page__restore-password" href="in-development.html">Восстановить пароль</a>
                                         </form>
                                     </div>
                                 </div>
                                 <div class="auth-page__column">
                                     <div class="auth-page__registration">
                                         <form class="auth-page__form auth-page__form-users validate" action="/users/registration/" method="post" data-submit="apply">
-                                            <h3 class="auth-page__name-label">Новый пользователь</h3>
+                                            <h3 class="auth-page__name-label">Регистрация</h3>
                                             <div class="auth-page__field">
                                                 <input class="auth-page__input required" type="text" name="name" placeholder="Имя" value=""/>
                                             </div>
@@ -118,10 +114,10 @@
                                             <div class="auth-page__field">
                                                 <input class="auth-page__input required" type="password" name="password" placeholder="Пароль" value=""/>
                                             </div>
-                                            <div class="submit">
-                                            <button class="submit-button auth-page__auth-button" type="submit">
-                                                <span>Зарегистрироваться</span>
-                                            </button>
+                                            <div class="auth-page__submit">
+                                                <button class="submit-button auth-page__auth-button" type="submit">
+                                                    <span>Зарегистрироваться</span>
+                                                </button>
                                           </div>
                                         </form>
                                     </div>
