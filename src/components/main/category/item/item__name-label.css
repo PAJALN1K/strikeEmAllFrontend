@@ -1,8 +1,8 @@
-.catalog-item__name-label {
+.item__name-label {
     color: #111;
     transition: color 0.05s;
 }
 
-.catalog-item__name-label:hover {
+.item__name-label:hover {
     color: #B41818;
 }

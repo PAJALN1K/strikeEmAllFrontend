@@ -1,4 +1,4 @@
-.catalog-item__row:first-child {
+.item_catalog__row:first-child {
     flex-basis: 85%;
 
     display: flex;
@@ -11,6 +11,6 @@
     
 }
 
-.catalog-item__row:last-child {
+.item_catalog__row:last-child {
     width: 80%;
 }
