@@ -31,6 +31,10 @@ ul {
 	user-select: none;
 }
 
+.hidden {
+    display: none;
+}
+
 /* *::selection {
     background: #B41818;
     color: #ffffff;

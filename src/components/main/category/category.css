@@ -1,5 +1,7 @@
 @import url(filter-panel/filter-panel.css);
 @import url(item-catalog/item-catalog.css);
+@import url(auth-page/auth-page.css);
+@import url(explanation/explanation.css);
 
 .category {
     display: flex;
