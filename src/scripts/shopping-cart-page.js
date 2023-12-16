@@ -67,18 +67,22 @@ for (let i = 0; i < 3; i++) {
     itemCreation(itemImgValues[i], itemNameLabelValues[i], itemPriceLabelValues[i]);
 };
 
-const priceLabels = document.querySelectorAll(".item__price-label");
-if (priceLabels.length > 0) {
+
+function setPriceLabel() {
+    const priceLabels = document.querySelectorAll(".item__price-label");
     let priceSum = 0;
-    for (let index = 0; index < priceLabels.length; index++) {
-        // var price = toString(priceLabels[index]).slice(0, toString(priceLabels[index]).length-1);
-        var price = priceLabels[index].textContent.slice(0, priceLabels[index].textContent.length-1);
-        price = Number(price);
-        priceSum += price;
+    if (priceLabels.length > 0) {
+        for (let index = 0; index < priceLabels.length; index++) {
+            // var price = toString(priceLabels[index]).slice(0, toString(priceLabels[index]).length-1);
+            var price = priceLabels[index].textContent.slice(0, priceLabels[index].textContent.length-1);
+            price = Number(price);
+            priceSum += price;
+        }
     }
     const priceResult = document.querySelector(".result-price__number");
     priceResult.textContent = priceSum + "₽";
 }
+
 
 const deleteButtons = document.querySelectorAll(".item_cart__delete-button");
 if (deleteButtons.length > 0) {
@@ -86,6 +90,7 @@ if (deleteButtons.length > 0) {
         const deleteButton = deleteButtons[index];
         deleteButton.addEventListener('click', function(e) {
             deleteItem(deleteButton);
+            setPriceLabel();
         })
     }
 }
@@ -93,3 +98,5 @@ if (deleteButtons.length > 0) {
 function deleteItem(deleteButton) {
     itemCart.removeChild(deleteButton.parentNode.parentNode);
 }
+
+setPriceLabel();
