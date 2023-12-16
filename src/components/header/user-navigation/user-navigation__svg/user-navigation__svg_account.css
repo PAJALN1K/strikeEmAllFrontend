@@ -1,0 +1,7 @@
+.user-navigation__svg_account {
+    background-image: url("account_fff.svg");
+}
+
+.user-navigation__svg_account:hover {
+    background-image: url("account_red.svg");
+}

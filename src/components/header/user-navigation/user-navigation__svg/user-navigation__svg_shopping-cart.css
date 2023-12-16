@@ -1,0 +1,8 @@
+.user-navigation__svg_shopping-cart {
+    background-image: url("shopping-cart_fff.svg");
+   
+}
+
+.user-navigation__svg_shopping-cart:hover {
+    background-image: url("shopping-cart_red.svg");
+}

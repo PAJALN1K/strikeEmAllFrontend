@@ -1,7 +1,5 @@
-.user-navigation__list {
+.user-navigation__item {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 22px;
 }
