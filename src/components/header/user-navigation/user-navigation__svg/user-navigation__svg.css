@@ -1,0 +1,15 @@
+@import url(user-navigation__svg_account.css);
+@import url(user-navigation__svg_favourites.css);
+@import url(user-navigation__svg_shopping-cart.css);
+
+.user-navigation__svg {
+    border: none;
+    fill: none;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+
+    transition: background-image 0.2s;
+}

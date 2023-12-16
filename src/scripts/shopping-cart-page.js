@@ -60,11 +60,6 @@ function itemCreation(itemImgValue, itemNameLabelValue, itemPriceLabelValue) {
     let itemDeleteButton = document.createElement('button');
     itemDeleteButton.classList.add('item_cart__delete-button');
     itemDeleteButton.type = "submit";
-    let itemDeleteButtonImg = document.createElement('img');
-    itemDeleteButtonImg.classList.add('delete-button__img');
-    itemDeleteButtonImg.src = "../components/main/category/item/item_cart__delete-button/delete-button__img.svg";
-    itemDeleteButtonImg.alt = "delete-icon";
-    itemDeleteButton.appendChild(itemDeleteButtonImg);
     itemRow3.appendChild(itemDeleteButton);
 }
 

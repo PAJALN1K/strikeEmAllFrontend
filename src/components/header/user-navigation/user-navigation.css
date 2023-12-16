@@ -1,2 +1,4 @@
-@import url(user-navigation__img.css);
 @import url(user-navigation__list.css);
+@import url(user-navigation__item.css);
+@import url(user-navigation__link.css);
+@import url(user-navigation__svg/user-navigation__svg.css);

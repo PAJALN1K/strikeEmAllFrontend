@@ -20,4 +20,5 @@
 
 .submit-button:hover {
     background-color: #111;
+    cursor: pointer;
 }
