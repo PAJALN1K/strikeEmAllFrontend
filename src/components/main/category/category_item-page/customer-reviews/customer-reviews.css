@@ -1,0 +1,7 @@
+@import url(customer-reviews__name-label.css);
+@import url(customer-reviews__paragraph.css);
+
+.customer-reviews {
+    margin-top: 75px;
+    margin-bottom: 45px; 
+}

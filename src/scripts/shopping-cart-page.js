@@ -4,7 +4,7 @@ if (accountLogged == false) {
     window.location.href = "../pages/account-page.html";
 };
 
-const itemImgValues = ["../components/main/category/items/airsoft-rifles__catalog/AGM_WWII_British_Sten_MKII.png", "../components/main/category/items/airsoft-rifles__catalog/CYMA_Standard_AK47_FullMetal.png", "../components/main/category/items/airsoft-rifles__catalog/COLT_M4A1_FullMetal_13_Keymod_Airsoft_AEG_Black.png"];
+const itemImgValues = ["../components/main/category/common/items/airsoft-rifles__catalog/AGM_WWII_British_Sten_MKII.png", "../components/main/category/common/items/airsoft-rifles__catalog/CYMA_Standard_AK47_FullMetal.png", "../components/main/category/common/items/airsoft-rifles__catalog/COLT_M4A1_FullMetal_13_Keymod_Airsoft_AEG_Black.png"];
 const itemNameLabelValues = ["AGM WWII British Sten MKII AEG Airsoft Rifle, Black", "CYMA Standard AK47 Full Metal Real Wood Blowback Airsoft AEG Rifle, Wood/Black", "COLT M4A1 Full Metal 13\" Keymod Airsoft AEG, Black"];
 const itemPriceLabelValues = ["19990₽", "19990₽", "22490₽"];
 
@@ -47,6 +47,7 @@ function itemCreation(itemImgValue, itemNameLabelValue, itemPriceLabelValue) {
     itemRow1.appendChild(itemLink2);
     let itemNameLabel = document.createElement('span');
     itemNameLabel.classList.add('item__name-label');
+    itemNameLabel.classList.add('item__name-label_hover');
     itemNameLabel.classList.add('item_cart__name-label');
     itemNameLabel.textContent = itemNameLabelValue;
     itemLink2.appendChild(itemNameLabel);

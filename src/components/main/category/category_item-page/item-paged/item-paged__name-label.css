@@ -1,0 +1,10 @@
+.item-paged__name-label {
+    color: #111;
+    font-family: 'Merriweather';
+    
+    font-size: 28px;
+    line-height: 40px;
+
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}

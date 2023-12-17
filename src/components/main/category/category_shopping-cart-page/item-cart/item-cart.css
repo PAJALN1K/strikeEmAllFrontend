@@ -1,4 +1,4 @@
-@import url(item_cart.css);
+@import url(item_cart/item_cart.css);
 
 .item-cart {
     display: flex;
