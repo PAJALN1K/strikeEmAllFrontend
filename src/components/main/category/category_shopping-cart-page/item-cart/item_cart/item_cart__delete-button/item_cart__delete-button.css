@@ -1,0 +1,21 @@
+@import url(delete-button__img.css);
+
+.item_cart__delete-button {
+    border: none;
+    fill: none;
+    background-image: url("delete-button__img.svg");
+    background-size: cover;
+    width: 30px;
+    height: 35px;
+
+    transition: background-image 0.2s;
+}
+
+.item_cart__delete-button:hover {
+    background-image: url("delete-button__img_red.svg");
+    cursor: pointer;
+}
+
+.item_cart__delete-button:active {
+    transform: scale(0.95);
+  }

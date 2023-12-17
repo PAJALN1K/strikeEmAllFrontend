@@ -5,15 +5,19 @@
         <meta charset="utf-8">
         <meta name="language" content="RU">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/catalog-page.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="icon" href="../components/common/logo/logo.ico">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Odor+Mean+Chey&display=swap');
+        </style>
     </head>
     <body>
         <div class="stike-em-all-page">
-            <header class="header">
+            <header class="header lock-padding">
                 <div class="header__container">
                     <div class="header__column">
                         <div class="logo header__logo">
-                            <a class="logo__link-container" href="#">
+                            <a class="logo__link-container" href="home-page.html">
                                 <img class="logo__img noselect" src="../components/common/logo/logo.svg" alt="three targets">
                                     <span class="logo__name-label">Strike 'Em All</span>
                             </a>
@@ -22,9 +26,9 @@
                     <div class="header__column">
                         <nav class="website-menu header__website-menu">
                             <ul class="website-menu__list">
-                                <li class="website-menu__item"><a class="website-menu__link website-menu__link_chosen" href="#">Каталог</a></li>
-                                <li class="website-menu__item"><a class="website-menu__link" href="#">Отзывы</a></li>
-                                <li class="website-menu__item"><a class="website-menu__link" href="#">О нас</a></li>
+                                <li class="website-menu__item"><a class="website-menu__link website-menu__link_chosen" href="catalog-page.html">Каталог</a></li>
+                                <li class="website-menu__item"><a class="website-menu__link" href="in-development.html">Отзывы</a></li>
+                                <li class="website-menu__item"><a class="website-menu__link" href="about-us-page.html">О нас</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -42,19 +46,17 @@
                     <div class="header__column">
                         <nav class="user-navigation">
                             <ul class="user-navigation__list">
+                                <a class="user-navigation__link" href="account-page.html">
+                                    <svg class="user-navigation__svg user-navigation__svg_account"></svg>
+                                </a>
                                 <li class="user-navigation__item">
-                                    <a class="user-navigation__link" href="#">
-                                        <img class="user-navigation__img user-navigation__img_color_fff noselect" src="../components/header/user-navigation/account_fff.svg" alt="account">
+                                    <a class="user-navigation__link" href="in-development.html">
+                                        <svg class="user-navigation__svg user-navigation__svg_favourites"></svg>
                                     </a>
                                 </li>
                                 <li class="user-navigation__item">
-                                    <a class="user-navigation__link" href="#">
-                                        <img class="user-navigation__img user-navigation__img_color_fff noselect" src="../components/header/user-navigation/favourites_fff.svg" alt="favourites">
-                                    </a>
-                                </li>
-                                <li class="user-navigation__item">
-                                    <a class="user-navigation__link" href="#">
-                                        <img class="user-navigation__img user-navigation__img_color_fff noselect" src="../components/header/user-navigation/shopping-cart_fff.svg" alt="shopping-cart">
+                                    <a class="user-navigation__link" href="shopping-cart-page.html">
+                                        <svg class="user-navigation__svg user-navigation__svg_shopping-cart"></svg>
                                     </a>
                                 </li>
                             </ul>
@@ -68,21 +70,21 @@
                         <div class="main-header">
                             <nav class="website-breadcrumbs">
                                 <ol class="website-breadcrumbs__list">
-                                    <li class="website-breadcrumbs__item website-breadcrumbs__item_previous"><a class="website-breadcrumbs__previous-dir" href="#">Главная</a></li>
-                                    <li class="website-breadcrumbs__item website-breadcrumbs__item_previous"><a class="website-breadcrumbs__previous-dir" href="#">Каталог</a></li>
-                                    <li class="website-breadcrumbs__item website-breadcrumbs__item_current"><span class="website-breadcrumbs__current-dir" href="#">Страйкбольные автоматы</span></li>
+                                    <li class="website-breadcrumbs__item website-breadcrumbs__item_previous"><a class="website-breadcrumbs__previous-dir" href="home-page.html">Главная</a></li>
+                                    <li class="website-breadcrumbs__item website-breadcrumbs__item_previous"><a class="website-breadcrumbs__previous-dir" href="catalog-page.html">Каталог</a></li>
+                                    <li class="website-breadcrumbs__item website-breadcrumbs__item_current"><span class="website-breadcrumbs__current-dir">Страйкбольные автоматы</span></li>
                                 </ol>
                             </nav>
-                            <div class="catalog-headline">
-                                <h1 class="catalog-headline__name-label">Страйкбольные автоматы</h1>
-                                <span class="catalog-headline__count">3</span>
+                            <div class="page-headline">
+                                <h1 class="page-headline__name-label">Страйкбольные автоматы</h1>
+                                <span class="page-headline__count">3</span>
                             </div>
                             <div class="header-actions">
                                 <div class="header-actions__column">
                                     <!-- shamil tbc -->
                                     <div class="filter-block filter-label">
                                         <div class="filter-block__column">
-                                            <img class=" filter-block__img noselect" src="../components/main/catalog-page__main/main-header/header-actions/filter-block/filter_111.svg" alt="filters">
+                                            <img class=" filter-block__img noselect" src="../components/main/main-header/header-actions/filter-block/filter_111.svg" alt="filters">
                                         </div>
                                         <div class="filter-block__column">
                                             <span class="filter-block__name-label">Фильтры</span>
@@ -110,7 +112,7 @@
                                 </div>
                             </div>
                             <!-- shamil tbc -->
-                            <hr class="catalog-divide-line">
+                            <hr class="page-divide-line">
                         </div>
                     </div>
                     <div class="main__row">
@@ -133,46 +135,34 @@
                                 </div>
                             </div>
                             <div class="item-catalog airsoft-rifles__catalog">
-                                <div class="catalog-item">
-                                    <div class="catalog-item__row">
-                                        <a class="catalog-item__link" href="#"><img class="catalog-item__img img-noselect" src="../components/main/catalog-page__main/category/item-catalog/airsoft-rifles__catalog/AGM_WWII_British_Sten_MKII.png"></a>
-                                        <a class="catalog-item__link" href="#"><span class="catalog-item__name-label">AGM WWII British Sten MKII AEG Airsoft Rifle, Black</span></a>
-                                        <span class="catalog-item__price-label">19.990₽</span>
+                                <div class="item_catalog">
+                                    <div class="item_catalog__row">
+                                        <a class="item__link item_catalog__link" href="item-page.html"><img class="item__img item_catalog__img img-noselect" src="../components/main/category/common/items/airsoft-rifles__catalog/AGM_WWII_British_Sten_MKII.png"></a>
+                                        <a class="item__link item_catalog__link" href="item-page.html"><span class="item__name-label item__name-label_hover item_catalog__name-label">AGM WWII British Sten MKII AEG Airsoft Rifle, Black</span></a>
+                                        <span class="item__price-label item_catalog__price-label">19.990₽</span>
                                     </div>
-                                    <div class="catalog-item__row">
-                                        <input class="catalog-item__purchase-button" type="button" value="В корзину">
-                                    </div>
-                                </div>
-                                <div class="catalog-item">
-                                    <div class="catalog-item__row">
-                                        <div class="catalog-item__subrow">
-                                            <a class="catalog-item__link" href="#"><img class="catalog-item__img img-noselect" src="../components/main/catalog-page__main/category/item-catalog/airsoft-rifles__catalog/CYMA_Standard_AK47_FullMetal.png"></a>
-                                        </div>
-                                        <div class="catalog-item__subrow">
-                                            <a class="catalog-item__link" href="#"><span class="catalog-item__name-label">CYMA Standard AK47 Full Metal Real Wood Blowback Airsoft AEG Rifle, Wood/Black</span></a>
-                                        </div>
-                                        <div class="catalog-item__subrow">
-                                            <span class="catalog-item__price-label">19.990₽</span>
-                                        </div>
-                                    </div>
-                                    <div class="catalog-item__row">
-                                        <input class="catalog-item__purchase-button" type="button" value="В корзину">
+                                    <div class="item_catalog__row">
+                                        <input class="submit-button item_catalog__purchase-button" type="button" value="В корзину">
                                     </div>
                                 </div>
-                                <div class="catalog-item">
-                                    <div class="catalog-item__row">
-                                        <div class="catalog-item__subrow">
-                                            <a class="catalog-item__link" href="#"><img class="catalog-item__img img-noselect" src="../components/main/catalog-page__main/category/item-catalog/airsoft-rifles__catalog/COLT_M4A1_FullMetal_13_Keymod_Airsoft_AEG_Black.png"></a>
-                                        </div>
-                                        <div class="catalog-item__subrow">
-                                            <a class="catalog-item__link" href="#"><span class="catalog-item__name-label">COLT M4A1 Full Metal 13" Keymod Airsoft AEG, Black</span></a>
-                                        </div>
-                                        <div class="catalog-item__subrow">
-                                            <span class="catalog-item__price-label">22.490₽</span>
-                                        </div>
+                                <div class="item_catalog">
+                                    <div class="item_catalog__row">
+                                        <a class="item__link item_catalog__link" href="item-page.html"><img class="item__img item_catalog__img img-noselect" src="../components/main/category/common/items/airsoft-rifles__catalog/CYMA_Standard_AK47_FullMetal.png"></a>
+                                        <a class="item__link item_catalog__link" href="item-page.html"><span class="item__name-label item__name-label_hover item_catalog__name-label">CYMA Standard AK47 Full Metal Real Wood Blowback Airsoft AEG Rifle, Wood/Black</span></a>
+                                        <span class="item__price-label item_catalog__price-label">19.990₽</span>
                                     </div>
-                                    <div class="catalog-item__row">
-                                        <input class="catalog-item__purchase-button" type="button" value="В корзину">
+                                    <div class="item_catalog__row">
+                                        <input class="submit-button item_catalog__purchase-button" type="button" value="В корзину">
+                                    </div>
+                                </div>
+                                <div class="item_catalog">
+                                    <div class="item_catalog__row">
+                                        <a class="item__link item_catalog__link" href="item-page.html"><img class="item__img item_catalog__img img-noselect" src="../components/main/category/common/items/airsoft-rifles__catalog/COLT_M4A1_FullMetal_13_Keymod_Airsoft_AEG_Black.png"></a>
+                                        <a class="item__link item_catalog__link" href="item-page.html"><span class="item__name-label item__name-label_hover item_catalog__name-label">COLT M4A1 Full Metal 13" Keymod Airsoft AEG, Black</span></a>
+                                        <span class="item__price-label item_catalog__price-label">22.490₽</span>
+                                    </div>
+                                    <div class="item_catalog__row">
+                                        <input class="submit-button item_catalog__purchase-button" type="button" value="В корзину">
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +174,7 @@
                 <div class="footer__container">
                     <div class="footer__column">
                         <div class="logo footer__logo">
-                            <a class="logo__link" href="#">
+                            <a class="logo__link" href="home-page.html">
                                 <span class="logo__name-label">Strike 'Em All</span>
                             </a>
                             <p class="logo__copyright-label">© 2023 Все права защищены.</p>
@@ -194,9 +184,9 @@
                         <nav class="footer-info website-info">
                             <span class="footer-info__name-label website-info__name-label">Информация</span>
                             <ul class="footer-info__list website-info__list">
-                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="#">О нас</a></li>
-                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="#">Отзывы</a></li>
-                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="#">Политика безопасности</a></li>
+                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="about-us-page.html">О нас</a></li>
+                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="in-development.html">Отзывы</a></li>
+                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="in-development.html">Политика безопасности</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -205,19 +195,19 @@
                             <span class="footer-info__name-label social-media__name-label">Социальные сети</span>
                             <ul class="footer-info__list social-media__list">
                                 <li class="footer-info__item social-media__item">
-                                    <a class="footer-info__link social-media__link" href="#">
+                                    <a class="footer-info__link social-media__link" href="https://vk.com/strikeEmAll">
                                         <img class="footer-info__img social-media__img img-noselect" src="../components/footer/social-media/vk_fff.svg" alt="vk">
                                         ВКонтакте
                                     </a>
                                 </li>
                                 <li class="footer-info__item social-media__item">
-                                    <a class="footer-info__link social-media__link" href="#">
+                                    <a class="footer-info__link social-media__link" href="https://t.me/strikeEmAll">
                                         <img class="footer-info__img social-media__img img-noselect" src="../components/footer/social-media/telegram_fff.svg" alt="telegram">
                                         Telegram
                                     </a>
                                 </li>
                                 <li class="footer-info__item social-media__item">
-                                    <a class="footer-info__link social-media__link" href="#">
+                                    <a class="footer-info__link social-media__link" href="https://www.youtube.com/@strikeEmAll">
                                         <img class="footer-info__img social-media__img img-noselect" src="../components/footer/social-media/youtube_fff.svg" alt="youtube">
                                         YouTube
                                     </a>

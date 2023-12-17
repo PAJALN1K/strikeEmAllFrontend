@@ -1,0 +1,16 @@
+@import url(item-paged__column.css);
+@import url(item-paged__img.css);
+@import url(item-paged__availability-label.css);
+@import url(item-paged__purchase-row.css);
+@import url(purchase-button.css);
+@import url(item-paged__price-label.css);
+@import url(item-paged__name-label.css);
+@import url(item-paged__characteristics-definition.css);
+@import url(item-paged__characteristics-list.css);
+@import url(item-paged__characteristics-term.css);
+
+.item-paged {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

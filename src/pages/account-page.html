@@ -5,7 +5,11 @@
         <meta charset="utf-8">
         <meta name="language" content="RU">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/catalog-page.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="icon" href="../components/common/logo/logo.ico">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Odor+Mean+Chey&display=swap');
+        </style>
     </head>
     <body>
         <div class="stike-em-all-page">
@@ -13,7 +17,7 @@
                 <div class="header__container">
                     <div class="header__column">
                         <div class="logo header__logo">
-                            <a class="logo__link-container" href="#">
+                            <a class="logo__link-container" href="home-page.html">
                                 <img class="logo__img noselect" src="../components/common/logo/logo.svg" alt="three targets">
                                     <span class="logo__name-label">Strike 'Em All</span>
                             </a>
@@ -22,9 +26,9 @@
                     <div class="header__column">
                         <nav class="website-menu header__website-menu">
                             <ul class="website-menu__list">
-                                <li class="website-menu__item"><a class="website-menu__link" href="#">Каталог</a></li>
-                                <li class="website-menu__item"><a class="website-menu__link" href="#">Отзывы</a></li>
-                                <li class="website-menu__item"><a class="website-menu__link" href="#">О нас</a></li>
+                                <li class="website-menu__item"><a class="website-menu__link" href="catalog-page.html">Каталог</a></li>
+                                <li class="website-menu__item"><a class="website-menu__link" href="in-development.html">Отзывы</a></li>
+                                <li class="website-menu__item"><a class="website-menu__link" href="about-us-page.html">О нас</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -42,19 +46,17 @@
                     <div class="header__column">
                         <nav class="user-navigation">
                             <ul class="user-navigation__list">
+                                <a class="user-navigation__link" href="account-page.html">
+                                    <svg class="user-navigation__svg user-navigation__svg_account"></svg>
+                                </a>
                                 <li class="user-navigation__item">
-                                    <a class="user-navigation__link" href="#">
-                                        <img class="user-navigation__img user-navigation__img_color_fff noselect" src="../components/header/user-navigation/account_fff.svg" alt="account">
+                                    <a class="user-navigation__link" href="in-development.html">
+                                        <svg class="user-navigation__svg user-navigation__svg_favourites"></svg>
                                     </a>
                                 </li>
                                 <li class="user-navigation__item">
-                                    <a class="user-navigation__link" href="#">
-                                        <img class="user-navigation__img user-navigation__img_color_fff noselect" src="../components/header/user-navigation/favourites_fff.svg" alt="favourites">
-                                    </a>
-                                </li>
-                                <li class="user-navigation__item">
-                                    <a class="user-navigation__link" href="#">
-                                        <img class="user-navigation__img user-navigation__img_color_fff noselect" src="../components/header/user-navigation/shopping-cart_fff.svg" alt="shopping-cart">
+                                    <a class="user-navigation__link" href="shopping-cart-page.html">
+                                        <svg class="user-navigation__svg user-navigation__svg_shopping-cart"></svg>
                                     </a>
                                 </li>
                             </ul>
@@ -64,21 +66,96 @@
             </header>
             <main class="main">
                 <div class="main__container">
-                    <h1 class="header-headline">Упс! Раздел "Личный кабинет" еще в разработке!</h1>
-                    <h1 class="header-headline">Упс! Раздел "Личный кабинет" еще в разработке!</h1>
-                    <h1 class="header-headline">Упс! Раздел "Личный кабинет" еще в разработке!</h1>
-                    <h1 class="header-headline">Упс! Раздел "Личный кабинет" еще в разработке!</h1>
-                    <h1 class="header-headline">Упс! Раздел "Личный кабинет" еще в разработке!</h1>
-                    <h1 class="header-headline">Упс! Раздел "Личный кабинет" еще в разработке!</h1>
-                    <h1 class="header-headline">Упс! Раздел "Личный кабинет" еще в разработке!</h1>
-                    <h1 class="header-headline">Упс! Раздел "Личный кабинет" еще в разработке!</h1>
+                    <div class="main__row">
+                        <div class="main-header">
+                            <nav class="website-breadcrumbs">
+                                <ol class="website-breadcrumbs__list">
+                                    <li class="website-breadcrumbs__item website-breadcrumbs__item_previous"><a class="website-breadcrumbs__previous-dir" href="home-page.html">Главная</a></li>
+                                    <li class="website-breadcrumbs__item website-breadcrumbs__item_current"><span class="website-breadcrumbs__current-dir" href="#">Личный кабинет</span></li>
+                                </ol>
+                            </nav>
+                            <div class="page-headline hidden">
+                                <h1 class="page-headline__name-label">Личный кабинет</h1>
+                            </div>
+                            <hr class="page-divide-line hidden">
+                        </div>
+                    </div>
+                    <div class="main__row">
+                        <div class="category category_auth-page">
+                            <div class="auth-page__column">
+                                <div class="auth-page__login">
+                                    <form class="auth-page__form auth-page__form-users validate" action="/users/" method="post"> 
+                                        <h3 class="auth-page__name-label">Авторизация</h3>
+                                        <div class="auth-page__field">
+                                            <input class="auth-page__input required" type="text" name="email" placeholder="E-mail" value=""/>
+                                        </div>
+                                        <div class="auth-page__field">
+                                            <input class="auth-page__input required" type="password" name="password" placeholder="Пароль" value=""/>
+                                        </div>
+                                        <div class="auth-page__field">
+                                            <input type="checkbox" name="remember" value="1" id="remember"/>
+                                            <label class="auth-page__checkbox-text" for="remember">Запомнить меня на сайте</label>
+                                        </div>
+                                        <div class="auth-page__submit">
+                                            <button class="submit-button auth-page__auth-button" type="submit" name="apply" value="1">Войти</button>
+                                        </div>
+                                        <a class="auth-page__restore-password" href="in-development.html">Восстановить пароль</a>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="auth-page__column">
+                                <div class="auth-page__registration">
+                                    <form class="auth-page__form auth-page__form-users validate" action="/users/registration/" method="post" data-submit="apply">
+                                        <h3 class="auth-page__name-label">Регистрация</h3>
+                                        <div class="auth-page__field">
+                                            <input class="auth-page__input required" type="text" name="name" placeholder="Имя" value=""/>
+                                        </div>
+                                        <div class="auth-page__field">
+                                            <input class="auth-page__input required" type="text" name="email" placeholder="E-mail" value=""/>
+                                        </div>
+                                        <div class="auth-page__field">
+                                            <input class="auth-page__input" type="text" name="phone" placeholder="Телефон" value=""/>
+                                        </div>
+                                        <div class="auth-page__field">
+                                            <input class="auth-page__input required" type="password" name="password" placeholder="Пароль" value=""/>
+                                        </div>
+                                        <div class="auth-page__submit">
+                                            <button class="submit-button auth-page__auth-button" type="submit">
+                                                <span>Зарегистрироваться</span>
+                                            </button>
+                                      </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category category_profile-page hidden">
+                            <div class="user-data">
+                                <div class="user-data__row user-data__name">
+                                    <div class="user-data__row-label user-data__row-label_name">Имя: </div>
+                                    <div class="user-data__row-value user-data__row-value_name">Иван</div>
+                                </div>
+                                <div class="user-data__row user-data__email">
+                                    <div class="user-data__row-label user-data__row-label_email">Email: </div>
+                                    <div class="user-data__row-value user-data__row-value_email">vanyaKrutoy2004@rambler.ru</div>
+                                </div>
+                                <div class="user-data__row user-data__phone">
+                                    <div class="user-data__row-label user-data__row-label_phone">Телефон: </div>
+                                    <div class="user-data__row-value user-data__row-value_phone">8(800)555-35-35</div>
+                                </div>
+                            </div>
+                            <div class="profile-buttons">
+                                <a class="profile-button more-data-button" href="in-development.html">Профиль</a>
+                                <a class="profile-button logout-button" href="in-development.html">Выйти из аккаунта</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <footer class="footer">
                 <div class="footer__container">
                     <div class="footer__column">
                         <div class="logo footer__logo">
-                            <a class="logo__link" href="#">
+                            <a class="logo__link" href="home-page.html">
                                 <span class="logo__name-label">Strike 'Em All</span>
                             </a>
                             <p class="logo__copyright-label">© 2023 Все права защищены.</p>
@@ -88,9 +165,9 @@
                         <nav class="footer-info website-info">
                             <span class="footer-info__name-label website-info__name-label">Информация</span>
                             <ul class="footer-info__list website-info__list">
-                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="#">О нас</a></li>
-                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="#">Отзывы</a></li>
-                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="#">Политика безопасности</a></li>
+                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="about-us-page.html">О нас</a></li>
+                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="in-development.html">Отзывы</a></li>
+                                <li class="footer-info__item website-info__item"><a class="footer-info__link website-info__link" href="in-development.html">Политика безопасности</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -99,19 +176,19 @@
                             <span class="footer-info__name-label social-media__name-label">Социальные сети</span>
                             <ul class="footer-info__list social-media__list">
                                 <li class="footer-info__item social-media__item">
-                                    <a class="footer-info__link social-media__link" href="#">
+                                    <a class="footer-info__link social-media__link" href="https://vk.com/strikeEmAll">
                                         <img class="footer-info__img social-media__img img-noselect" src="../components/footer/social-media/vk_fff.svg" alt="vk">
                                         ВКонтакте
                                     </a>
                                 </li>
                                 <li class="footer-info__item social-media__item">
-                                    <a class="footer-info__link social-media__link" href="#">
+                                    <a class="footer-info__link social-media__link" href="https://t.me/strikeEmAll">
                                         <img class="footer-info__img social-media__img img-noselect" src="../components/footer/social-media/telegram_fff.svg" alt="telegram">
                                         Telegram
                                     </a>
                                 </li>
                                 <li class="footer-info__item social-media__item">
-                                    <a class="footer-info__link social-media__link" href="#">
+                                    <a class="footer-info__link social-media__link" href="https://www.youtube.com/@strikeEmAll">
                                         <img class="footer-info__img social-media__img img-noselect" src="../components/footer/social-media/youtube_fff.svg" alt="youtube">
                                         YouTube
                                     </a>
@@ -123,4 +200,5 @@
             </footer>
         </div>
     </body>
+    <script src="../scripts/account-page.js"></script>
 </html>

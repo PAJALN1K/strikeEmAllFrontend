@@ -1,0 +1,12 @@
+@import url(category_auth-page/category_auth-page.css);
+@import url(category_catalog-page/category_catalog-page.css);
+@import url(category_item-page/category_item-page.css);
+@import url(category_profile-page/category_profile-page.css);
+@import url(category_shopping-cart-page/category_shopping-cart-page.css);
+@import url(common/common.css);
+
+.category {
+    display: flex;
+    
+    padding-top: 20px;
+}

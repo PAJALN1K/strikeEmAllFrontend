@@ -1,0 +1,6 @@
+@import url(item-paged/item-paged.css);
+@import url(customer-reviews/customer-reviews.css);
+
+.category_item-page {
+    flex-direction: column;
+}

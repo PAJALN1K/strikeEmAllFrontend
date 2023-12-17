@@ -1,0 +1,7 @@
+.user-navigation__svg_favourites {
+    background-image: url("favourites_fff.svg");
+}
+
+.user-navigation__svg_favourites:hover {
+    background-image: url("favourites_red.svg");
+}

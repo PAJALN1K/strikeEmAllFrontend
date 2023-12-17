@@ -1,4 +1,5 @@
 @import url(logo/logo.css);
+@import url(submit-button/submit-button.css);
 
 body {
     margin: 0;
@@ -28,6 +29,12 @@ ul {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+.hidden {
+    visibility: hidden;
+    width: 0; height: 0;
+    position: absolute; top: -9999px; left: -9999px;
 }
 
 /* *::selection {
