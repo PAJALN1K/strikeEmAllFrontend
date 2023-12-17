@@ -3,6 +3,6 @@
     transition: color 0.05s;
 }
 
-.item__name-label:hover {
+.item__name-label_hover:hover {
     color: #B41818;
 }

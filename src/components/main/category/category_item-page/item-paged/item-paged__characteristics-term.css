@@ -1,0 +1,9 @@
+.item-paged__characteristics-term {
+    float: left;
+    margin: 0px 5px 0px 0px;
+    padding: 5px 0px;
+}
+
+.item-paged__characteristics-term::after {
+    content: ': ';
+}

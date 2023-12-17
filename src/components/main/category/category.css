@@ -1,21 +1,12 @@
-@import url(filter-panel/filter-panel.css);
-@import url(auth-page/auth-page.css);
-@import url(explanation/explanation.css);
-@import url(item/item-cart.css);
-@import url(item/item-catalog.css);
-@import url(result-price/result-price.css);
-@import url(cart-buttons/cart-buttons.css);
-@import url(user-data/user-data.css);
-@import url(profile-buttons/profile-buttons.css);
+@import url(category_auth-page/category_auth-page.css);
+@import url(category_catalog-page/category_catalog-page.css);
+@import url(category_item-page/category_item-page.css);
+@import url(category_profile-page/category_profile-page.css);
+@import url(category_shopping-cart-page/category_shopping-cart-page.css);
+@import url(common/common.css);
 
 .category {
     display: flex;
-    flex-direction: row;
     
-
     padding-top: 20px;
-}
-
-.category__item-cart {
-    flex-direction: column;
 }

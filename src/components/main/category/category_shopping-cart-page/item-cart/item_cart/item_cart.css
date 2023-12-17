@@ -1,6 +1,4 @@
-@import url(item__img.css);
-@import url(item__name-label.css);
-@import url(item__price-label.css);
+@import url(item_cart__img.css);
 @import url(item_cart__row.css);
 @import url(item_cart__delete-button/item_cart__delete-button.css);
 

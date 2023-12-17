@@ -1,0 +1,11 @@
+.item-paged__column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+}
+
+.item-paged__column:last-child {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

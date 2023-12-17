@@ -1,0 +1,9 @@
+@import url(result-price/result-price.css);
+@import url(cart-buttons/cart-buttons.css);
+@import url(item-cart/item-cart.css);
+
+.category_shopping-cart-page {
+    flex-direction: column;
+
+    justify-content: center;
+}
